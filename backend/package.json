@@ -1,0 +1,29 @@
+{
+  "name": "markopy-api",
+  "version": "1.0.0",
+  "description": "Backend API for Markopy Premium",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:integration": "vitest run integration.test.js",
+    "test:all": "vitest run && vitest run integration.test.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "@supabase/supabase-js": "^2.39.0",
+    "express-rate-limit": "^7.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@vitest/ui": "^2.1.8",
+    "supertest": "^7.0.0",
+    "vitest": "^2.1.8"
+  }
+}
